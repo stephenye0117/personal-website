@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useTheme } from '../../hooks/useTheme';
 import { personalInfo } from '../../data/personal';
-import SpotifyNowPlaying from '../SpotifyNowPlaying/SpotifyNowPlaying';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,6 +8,7 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "#experience", text: "Experience" },
+    { href: "#education", text: "Education" },
     { href: "#projects", text: "Projects" },
     { href: "#skills", text: "Skills" },
     { href: "#contact", text: "Contact" }
@@ -18,19 +18,14 @@ const Navbar = () => {
     <nav className="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-800">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          {/* Left side with name and Spotify */}
-          <div className="flex items-center space-x-4">
+          <div className="flex-shrink-0">
             <a href="#" className="text-xl font-bold text-gray-800 dark:text-white">
-              {personalInfo.name.split(' ')[0]}
+              {personalInfo.displayName}
               <span className="text-blue-600">.dev</span>
             </a>
-            {/* This should always be visible for debugging */}
-            <div className="border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
-              <SpotifyNowPlaying />
-            </div>
           </div>
 
-          {/* Rest of your navbar code... */}
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map(link => (
               <a
