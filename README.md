@@ -99,7 +99,7 @@ You can customize:
 ## 👤 Author
 
 **Stephen Ye**
-- Website: [stephen.dev](https://stephen.dev)
+- Website: [stephen.dev](https://stephenyesite.vercel.app)
 - LinkedIn: [@stephenye210](https://www.linkedin.com/in/stephenye210/)
 - GitHub: [@stephenye0117](https://github.com/stephenye0117)
 
