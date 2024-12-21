@@ -1,11 +1,14 @@
 export const personalInfo = {
     name: "Yangen Ye",
+    preferredName: "Stephen Ye",
+    displayName: "Stephen",  // This will be used for Stephen.dev
     title: "Software Engineer",
     email: "step4enye@gmail.com",
     phone: "+13476546744",
     location: "Blacksburg, Virginia",
     linkedin: "https://www.linkedin.com/in/stephenye210/",
     github: "https://github.com/stephenye0117",
+    sourceCode: "https://github.com/stephenye0117/personal-website",
     status: ["Open to Remote", "Open to Relocate"],
     roles: [
       "Software Engineer",

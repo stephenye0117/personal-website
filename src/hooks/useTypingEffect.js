@@ -2,34 +2,25 @@ import { useState, useEffect } from 'react';
 
 export const useTypingEffect = () => {
   const [displayedText, setDisplayedText] = useState('');
+  const [isComplete, setIsComplete] = useState(false);
+  const fullText = "Software Engineer";
 
   useEffect(() => {
-    const text = "Software Engineer";
-    let currentIndex = 0;
-    let forward = true;
+    if (isComplete) return;
 
+    let currentIndex = 0;
     const intervalId = setInterval(() => {
-      if (forward) {
-        if (currentIndex <= text.length) {
-          setDisplayedText(text.slice(0, currentIndex));
-          currentIndex++;
-        } else {
-          forward = false;
-        }
+      if (currentIndex <= fullText.length) {
+        setDisplayedText(fullText.slice(0, currentIndex));
+        currentIndex++;
+      } else {
+        setIsComplete(true);
+        clearInterval(intervalId);
       }
-      
-      if (!forward) {
-        if (currentIndex >= text.length - 3) {
-          currentIndex--;
-          setDisplayedText(text.slice(0, currentIndex));
-        } else {
-          forward = true;
-        }
-      }
-    }, 200); // Adjust speed here
+    }, 100); // Adjust speed here
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [isComplete]);
 
-  return displayedText;
+  return { text: displayedText, isComplete };
 };
