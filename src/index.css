@@ -33,3 +33,13 @@ html {
 .animate-blink {
   animation: blink 1s step-end infinite;
 }
+
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 4rem;
+}

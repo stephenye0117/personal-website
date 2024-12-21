@@ -4,7 +4,8 @@ export const personalInfo = {
     email: "step4enye@gmail.com",
     phone: "+13476546744",
     location: "Blacksburg, Virginia",
-    linkedin: "LinkedIn",
+    linkedin: "https://www.linkedin.com/in/stephenye210/",
+    github: "https://github.com/stephenye0117",
     status: ["Open to Remote", "Open to Relocate"],
     roles: [
       "Software Engineer",
@@ -19,19 +20,22 @@ export const personalInfo = {
       title: "Postal Scanner",
       description: "A C-based software program providing comprehensive geographical information for user-inputted locations. Features include postal code lookup, town information display, and distance calculation between multiple locations.",
       technologies: ["C", "Algorithms", "Geographic Data"],
-      highlights: ["Location data processing", "Distance calculations", "User input handling"]
+      highlights: ["Location data processing", "Distance calculations", "User input handling"],
+      github: "https://github.com/stephenye0117/postal-scanner"  // Add the actual repo link if it exists
     },
     {
       title: "Time Efficient Sorting",
-      description: "Developed an efficient binary data file sorting program in Java using modified Quicksort and Insertion sort algorithms, featuring buffer pool management and performance statistics tracking.",
+      description: "Developed a software program which efficiently sorts binary data files using modified Quicksort and Insertion sort algorithms, featuring buffer pool management.",
       technologies: ["Java", "Quicksort", "Insertion Sort", "Buffer Management"],
-      highlights: ["Performance optimization", "Buffer pool implementation", "Statistics tracking"]
+      highlights: ["Performance optimization", "Buffer pool implementation", "Statistics tracking"],
+      github: "https://github.com/stephenye0117/time-efficient-sorting"  // Add the actual repo link if it exists
     },
     {
       title: "Seminar Search",
-      description: "Created a seminar record management system implementing Binary Search Trees and Bintrees, allowing for complex search operations by various parameters.",
+      description: "Created a seminar record management system implementing Binary Search Trees and Bintrees for complex search operations by various parameters.",
       technologies: ["Data Structures", "Binary Search Trees", "Bintrees"],
-      highlights: ["Complex search functionality", "Tree traversal", "Database operations"]
+      highlights: ["Complex search functionality", "Tree traversal", "Database operations"],
+      github: "https://github.com/stephenye0117/seminar-search"  // Add the actual repo link if it exists
     }
   ];
   
