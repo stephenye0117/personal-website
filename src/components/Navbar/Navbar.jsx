@@ -7,6 +7,7 @@ const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
 
   const navLinks = [
+    { href: "#terminal", text: "Terminal" },
     { href: "#experience", text: "Experience" },
     { href: "#education", text: "Education" },
     { href: "#projects", text: "Projects" },

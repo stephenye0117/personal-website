@@ -24,21 +24,21 @@ export const personalInfo = {
       description: "A C-based software program providing comprehensive geographical information for user-inputted locations. Features include postal code lookup, town information display, and distance calculation between multiple locations.",
       technologies: ["C", "Algorithms", "Geographic Data"],
       highlights: ["Location data processing", "Distance calculations", "User input handling"],
-      github: "https://github.com/stephenye0117/postal-scanner"  // Add the actual repo link if it exists
+      github: "https://github.com/stephenye0117/Postal-ZipDate" 
     },
     {
       title: "Time Efficient Sorting",
       description: "Developed a software program which efficiently sorts binary data files using modified Quicksort and Insertion sort algorithms, featuring buffer pool management.",
       technologies: ["Java", "Quicksort", "Insertion Sort", "Buffer Management"],
       highlights: ["Performance optimization", "Buffer pool implementation", "Statistics tracking"],
-      github: "https://github.com/stephenye0117/time-efficient-sorting"  // Add the actual repo link if it exists
+      github: "https://github.com/stephenye0117/Quicksort" 
     },
     {
       title: "Seminar Search",
       description: "Created a seminar record management system implementing Binary Search Trees and Bintrees for complex search operations by various parameters.",
       technologies: ["Data Structures", "Binary Search Trees", "Bintrees"],
       highlights: ["Complex search functionality", "Tree traversal", "Database operations"],
-      github: "https://github.com/stephenye0117/seminar-search"  // Add the actual repo link if it exists
+      github: "https://github.com/stephenye0117/Bintree" 
     }
   ];
   
